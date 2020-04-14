@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="center title">My TODO App</h1>
+      <div class="flow-right controls">
+	  <span style="display:none" id="item-auto-increment">0</span>
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+	  <div  class="center" style="border:1px solid grey; border-radius:5px;">
+	 <form action="index.html" method="post">
+        <input type="text" placeholder="new todo" name="task">
+      <button type="submit" title="add new todo task"><strong style="cursor:pointer;">ADD</strong></button>
+	  </form>
+	  </div>
+      <ul id="todo-list" class="todo-list">
+	  </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
